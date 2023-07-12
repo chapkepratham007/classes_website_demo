@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            margin: 5px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 95vh;
+            background:skyblue;
+            font-family: sans-serif;
+            text-align:center;
+            color:white;
+            font: size 24px;
+            display:flex;
+            flex-direction: column;
+        }
+        ul{
+            font-size: 20px;
+            word-spacing: 10px;
+            color:black;
+            
+        }
+        li {
+            display:inline;
+        }
+
+        header{
+            background-color:rgb(46, 45, 45);
+            padding:2em 0 2em 0;
+        }
+        p,h3{
+            color:black;
+        }
+
+        .main{
+            display:flex;
+            flex:1;
+            
+        }
+        .left{
+            border:2px solid black;
+            padding:3em 0 3em 0;
+            flex:5 5 150px;
+            
+        }
+        main{
+            border:2px solid black;
+            padding:3em 0 3em 0;
+            flex: 5 5 150px;
+        }
+        .right{
+            border:2px solid black;
+            padding:3em 0 3em 0;
+            flex:5 5 150px;
+        }
+        footer{
+            background: black;
+            padding:3em 0 3em 0;
+        }
+
+        @media all and (max-width:550px){
+            .main{
+                flex-direction:column;
+            }
+            main{
+                padding:5em 0 5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a style="color:white" href="#">Home</a></li>
+            <li><a style="color:white" href="#">About</a></li>
+            <li><a style="color:white" href="#">Contact </a></li>
+            <li><a style="color:white" href="#">mail us</a></li>
+            <li><a style="color:white" href="#">testomonial </a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <aside class="left">
+            <h1 style="color:crimson">aside tag</h1>
+           <h3>web development</h3>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vel ad doloremque incidunt, sapiente laudantium odio blanditiis nemo magnam cum magni fuga laborum neque cupiditate? Nobis libero deserunt adipisci dolores.</p>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam consequatur eum et libero ea? Hic, totam nisi iste natus distinctio sunt cupiditate molestias facilis optio quos dolor eaque veritatis aperiam?</p>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, natus? Illum fugit hic iure sed eius, delectus facilis repellendus doloribus incidunt, repudiandae voluptates corrupti voluptatibus sunt eaque consequuntur eveniet. Quaerat!</p>
+        </aside>
+        <main>
+            <h2 style="color:black">main content</h2>
+            <img src="coursepy.jpg" height="400px"/>
+        </main>
+        <aside class="right">
+            <h1 style="color:crimson">aside tag</h1>
+            <h3>full stack development</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam atque odit ipsam vitae cum. Dicta, ipsum consequuntur praesentium libero, laborum iure quod commodi eius reiciendis assumenda architecto similique eligendi obcaecati itaque facilis in ab voluptatibus accusamus. Nulla corporis recusandae veniam explicabo, maxime reprehenderit odio similique dicta est fuga perspiciatis veritatis doloremque volurepellat sunt aperiam ipsum quod natus fuga quaerat vitae quisquam. Non doflaborum, sit hic rem nesciunt, rerum blanditiis perferendis repellendus sint? Amet pariatur sunt reprehenderit! Omnis qui temporibus nostrum distinctio soluta!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam deserunt mollitia soluta sint reiciendis voluptates rerum? Ut repellat nam laudantium, iste harum perferendis vel repudiandae explicabo blanditiis, atque excepturi maxime?</p>
+        </aside>
+    </div>
+    <footer>
+        FOOTER
+        2023 &copy; ak classes
+    </footer>
+</body>
+</html>
